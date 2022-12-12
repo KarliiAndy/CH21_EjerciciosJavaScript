@@ -137,6 +137,7 @@ let nume3 = document.getElementById("n3").value;
             event.preventDefault();
             let sum2 = document.getElementById("alertsumadosnum");
             sum2.innerHTML = sum();
+            
         })
         
 
