@@ -82,15 +82,72 @@ let nume3 = document.getElementById("n3").value;
 
     //---------------Ejercicio3---------------------------
 
+   
+
+
+
 
 
 
     //-----------Ejercicio 4---------------------------------
 
 
+    let btnmultiplo = document.getElementById ("btnmultiplo");
 
+    function multiplo(){
+
+    let numi = document.getElementById("n").value;
+        
+       if(numi%3 == 0){
+            return "El número " + numi + " es múltiplo de 3."
+        }
+        else if(numi%3 != 0){
+            return "El número " + numi + " no es múltiplo de 3."
+        }
+    }
+
+    btnmultiplo.addEventListener("click", function (event) {
+        event.preventDefault();
+        let multiplo3 = document.getElementById("alertmultiplo3");
+        multiplo3.innerHTML = multiplo();
+    })
 
     //------------Ejercicio 5---------------------------------
+
+    let btnsuma = document.getElementById ("btnsuma");
+    let sumados=0
+     function sum() {
+
+        let numb1= document.getElementById("number1").value;
+        let numb2= document.getElementById("number2").value;
+        let numb3= document.getElementById("number3").value;
+           
+            if (numb1 === (numb2 + numb3)){
+                return sumados ="El número " + numb1 + " es igual a la suma de" + numb2 +"y" + numb3 ;
+            } else if (numb3 === (numb1 + numb2)){
+                return "El número " + numb3 + " es igual a la suma de" + numb1 +"y" + numb2 ;
+            } else if (numb2 === (numb1 + numb3)){
+                return "El número " + numb2 + " es  igual a la suma de" + numb1 +"y" + numb3 ;
+            } else{
+                return "los numeros no son la suma de ninguno de ellos"
+            }
+        }
+
+        btnsuma.addEventListener("click", function (event) {
+            event.preventDefault();
+            let sum2 = document.getElementById("alertsumadosnum");
+            sum2.innerHTML = sum();
+        })
+        
+
+        
+
+
+
+
+
+
+
 
 
 
