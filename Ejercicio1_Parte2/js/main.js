@@ -79,3 +79,50 @@ let nume3 = document.getElementById("n3").value;
         let numeromaspequeño = document.getElementById("alertnumeromenor");
         numeromaspequeño.innerHTML = `El número más pequeño es: ${nummenor(elmenor)}`;
     })
+
+    //---------------Ejercicio3---------------------------
+
+
+
+
+    //-----------Ejercicio 4---------------------------------
+
+
+
+
+    //------------Ejercicio 5---------------------------------
+
+
+
+    //----------Ejercicio 6----------------------------------
+
+//     let calcular = document.getElementById ("calcular");
+
+//    let par=0;
+//    let impar=0;
+
+//     function calcular(){
+//         let nume = document.getElementById('numero').value;
+//         if(nume % 2 == 0){
+//            return par;
+//         }else{
+//            paroimpar= `"Es impar"`;
+//            return impar;
+//         }
+//     }
+
+//     calcular.addEventListener("click", function (event) {
+//         event.preventDefault();
+//         let esparoimpar = document.getElementById("resultado");
+//         esparoimpar.innerHTML = `El número es: ${calcular(par , impar)}`;
+//     })
+
+
+function calcular(){
+    let numero = parseInt(document.getElementById('numero').value);
+    if(numero % 2 == 0){
+       return document.getElementById('resultado').value = `El número ${numero} es par.`;
+    }else{
+        return document.getElementById('resultado').value = `El número ${numero} es impar.`;
+    }
+}
