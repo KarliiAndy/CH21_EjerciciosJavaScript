@@ -37,7 +37,10 @@ function ElMenor(arreglo2) {
         if (arreglo2[i] < menor) {
             menor = arreglo2[i];
         }
-    } return menor;
+    }
+    console.log ("Del arreglo de números: " + arreglo2)
+    console.log ("El número más pequeño es: " + menor);
+    return menor;
 }  
 for (let i = 0; i < arreglo2.length; i++) { 
     list2.innerHTML+= `<li class="list-group-item" >${i+1} ) ${arreglo2[i]}</li>`;
